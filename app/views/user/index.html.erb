@@ -1,0 +1,9 @@
+ <p>blah blah blah</p>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.input %></td>
+        <td><%= user.gifttext %></td>
+    </tr>
+    <% end %>
+</tbody>

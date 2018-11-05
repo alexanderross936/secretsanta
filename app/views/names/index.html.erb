@@ -1,0 +1,11 @@
+ <p>blah blah blah</p>
+  <tbody>
+    <% @members.each do |member| %>
+      <tr>
+        <td><%= member.input %></td>
+        <td><%= member.gifttext %></td>
+        <td><%= member.spouse %></td>
+        <td><%= member.giftspouse %></td>
+    </tr>
+    <% end %>
+</tbody>

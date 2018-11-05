@@ -1,0 +1,26 @@
+<%= form_with(model: @member, local: true ) do |f| %>
+<p>Who is the participant?</p>
+<div class="field">
+    <%= f.label :person %>
+    <%= f.text_field :input %>
+</div>
+<p>What gifts would they like?</p>
+<div class="field">
+  <%= f.label :gifts %>
+  <%= f.text_field :gifttext %>
+</div>
+<p>Who, if anyone, is their spouse? If they don't have one you can leave this field blank</p>
+<div class="field">
+  <%= f.label :spouse %>
+  <%= f.text_field :spouse %>
+</div>
+<p>What gifts would they like? If there is no spouse then you can leave this field blank.</p>
+<div class="field">
+  <%= f.label :gifts %>
+  <%= f.text_field :giftspouse %>
+</div>
+  <div class="actions">
+  <%= f.submit "Submit" %>
+</div>
+  <%= link_to 'Done', names_results_path(@name) %>
+<% end %>

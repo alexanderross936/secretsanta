@@ -1,0 +1,24 @@
+ <p>blah blah blah</p>
+ <table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Gift</th>
+      <th>Spouse</th>
+      <th>Gift</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @members.each do |member| %>
+      <tr>
+        <td><%= member.input %></td>
+        <td><%= member.gifttext %></td>
+        <td><%= member.spouse %></td>
+        <td><%= member.spousegift %></td>
+    </tr>
+    <% end %>
+</tbody>
+</table>
+<%= link_to 'New', new_member_path %>
+<%= link_to 'Results', members_results_path %>

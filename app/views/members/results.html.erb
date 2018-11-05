@@ -1,0 +1,13 @@
+<table>
+	<tr>
+		<th>Matches:</th>
+	</tr>
+		<% @matches.each do |results| %><br>
+		<tr>
+<td><%= results %></td>
+<% end %>
+</tr>
+</table>
+<br>
+<%= link_to 'All names', members_index_path %>
+<%= link_to 'New name', new_member_path %>

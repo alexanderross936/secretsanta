@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  input: MyString
+  gifttext: MyString
+  spouse: MyString
+  giftspouse: MyString
+
+two:
+  input: MyString
+  gifttext: MyString
+  spouse: MyString
+  giftspouse: MyString
