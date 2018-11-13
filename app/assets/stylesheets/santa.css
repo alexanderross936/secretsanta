@@ -1,0 +1,15 @@
+body {
+	background-image: url('/assets/background.jpg');
+}
+.mydiv {
+	font-weight: bold;
+}
+a:hover {
+	color: gold
+}
+a:link {
+	color: red
+}
+a:visited {
+	color: green;
+}

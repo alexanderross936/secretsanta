@@ -5,6 +5,11 @@ end
 def index
 	@members = Member.all
 end
+def destroy 
+    @member = Member.find(params[:id])
+    @members = Member.destroy(params[:id])
+    redirect_to members_path
+end
 def prints
 userinput = []
 people = []
@@ -118,13 +123,24 @@ end
 def create
    @member = Member.new(member_params)
 if @member.save
-  redirect_to :action => 'new'
+  redirect_to :action => 'ask'
 else
-  render :action => 'new'
+  render :action => 'ask'
 end
+end
+def ask
 end
 def show
 end
+def update
+	@article = Member.find(params[:id])
+
+	if @member.update(member_params)
+		redirect_to @member
+	else
+		render 'edit'
+		end
+	end
 def results
 	@matches = prints
 end

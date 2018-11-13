@@ -1,4 +1,5 @@
- <p>blah blah blah</p>
+ <div class="mydiv">
+ <p>Index</p>
  <table>
   <thead>
     <tr>
@@ -16,9 +17,13 @@
         <td><%= member.gifttext %></td>
         <td><%= member.spouse %></td>
         <td><%= member.spousegift %></td>
+      <td><%= button_to 'Destroy', member_path(member),
+      method: :delete,
+      data: {confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
 </tbody>
 </table>
 <%= link_to 'New', new_member_path %>
-<%= link_to 'Results', members_results_path %>
+<%= link_to 'Matches', members_results_path %>
+</div>
